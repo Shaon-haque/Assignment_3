@@ -33,7 +33,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        WebElement treeline = driver.findElement(By.xpath("//button[contains(@id,'react-burger-menu-btn')]"));
+        WebElement threeline = driver.findElement(By.xpath("//button[contains(@id,'react-burger-menu-btn')]"));
         System.out.println("Open Menu");
 
         try {
@@ -42,7 +42,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        WebElement Product = driver.findElement(By.xpath("//div[contains(@class,\"inventory_item_name \")]"));
+        WebElement Product = driver.findElement(By.xpath("//div[text()='Sauce Labs Backpack']"));
         Product.click();
 
         try {
